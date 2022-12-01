@@ -7,10 +7,11 @@ with open(file) as f:
 
 elves = [list(map(int, elf.split())) for elf in input]
 sums = [sum(elf) for elf in elves]
-top = max(sums)
-print(f'Part 1: {top:,}')
+answer1 = max(sums)
+print(f'Part 1: {answer1:,}')
 
 # 1.2
 top3 = sorted(sums)[-3:]
 print(f'top 3: {top3}')
-print(f'Part 2: {sum(top3):,}')
+answer2 = sum(top3)
+print(f'Part 2: {answer2:,}')
