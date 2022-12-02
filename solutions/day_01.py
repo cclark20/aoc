@@ -1,7 +1,7 @@
 import sys
 
 # 1.1
-file = str(sys.argv[1:][0]) # file passed through command line
+file = str(sys.argv[1]) # file passed through command line
 with open(file) as f:
     input = f.read().split('\n\n')
 
