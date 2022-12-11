@@ -4,7 +4,7 @@ file = str(sys.argv[1]) # file passed through command line
 with open(file) as f:
     input = f.read().split('\n')
 
-# 10.1
+# 10
 x = 1
 iterator = 0
 piterator = 0
@@ -39,14 +39,3 @@ for cyc in range(1, 240+1):
             check += 1
 
 print('\n10.1' ,sum(signals))
-
-
-'''
-if addx, dont do anything first time
-second time, update x and increase iterator
-how will it know when it's the second time seeing it
-
-on first pass, iterator will be a new number from the last loop
-if iterator didn't change, then must be the second time
-
-'''
